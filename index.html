@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<!-- meta --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>js/jq practice</title>
+
+     <!-- Favicons -->
+    
+
+
+    <!-- fonts -->
+
+    <!-- icon -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+   
+  </head>
+
+ 
+  <body>
+    <header>
+      <h1 class="text-center">js/jq practice</h1>
+    </header>
+    
+    <!-- introduction practice -->
+    <section class="intro">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3">
+            <div class="intro-cntnt1">
+              <h1 id="txtChng">What is Javascript?</h1>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="textChange()">interested</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center">
+            <div class="intro-cntnt2">
+              <div class="bird-img">
+                <img src="images/stop.jpg" alt="" class="img-fluid" id="bird">
+              </div>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="play()">play</button>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="stop()">stop</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 text-center">
+            <div class="intro-cntnt3">
+              <h1 id="styleChng">Are you happy?</h1>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="styleChange()">click me</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- introduction practice -->
+
+    <!-- output method -->
+    <section class="ot-pt">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 text-center">
+            <div class="ot-pt-cntnt">
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="windowAlert()">messages</button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- output method -->
+
+    <!-- statement start -->
+    <section class="stmnt">
+      <div class="container">
+        <div class="row justify-content-center">
+          
+          <div class="col text-center">
+            <div class="stmnt-emxple-1">
+              <p>If  x = 50, y = 10, then the value of z = <span id="slv">( x - y )</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="solve()">solve</button>
+            </div>
+          </div>
+
+          <div class="col text-center">
+            <div class="stmnt-emxple-1">
+              <p>If  x = 50, y = 10, then the value of z = <span id="slv2">( x ÷ y )</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="problem()">solve</button>
+            </div>
+          </div>
+
+          <div class="col text-center">
+            <div class="stmnt-emxple-1">
+              <p>If  x = 50, y = 10, then the value of z = <span id="slv3">{(x-y) × (x ÷ y)}</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="problem2()">solve</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- statement end -->
+
+    <!-- operators start -->
+    <section class="oprtr">
+      <div class="container">
+        <div class="row">
+
+          <div class="col text-center">
+            <div class="orptr-exmpl stmnt-emxple-1">
+              <p>If  x = 50, y = 10, then the value of z = <span id="slv4">( x %= y )</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="numberPercentage()">solve</button>
+            </div>
+          </div>
+
+          <div class="col text-center">
+            <div class="orptr-exmpl stmnt-emxple-1">
+              <p>If  x = 50, y = 10, then the value of z = <span id="slv5">( x *= y )</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="numberMultiplication()">solve</button>
+            </div>
+          </div>
+          
+          <div class="col text-center">
+            <div class="orptr-exmpl stmnt-emxple-1">
+              <p>If  m = 12, n = 2, then the value of z = <span id="slv6">( m**=n )</span></p>
+              <button class="btn btn-success cstm-intro-btn" type="button" onclick="numberMultiplication2()">solve</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- operators end -->
+
+    <!-- class work start -->
+
+    <!-- show-hidden start -->
+    <section class="hddn-shw">
+      <div class="container">
+        <h1 class="text-center text-dark">Show and Hide</h1>
+        <p class="text-center shHdn" id="shHdn">Are you ready for practice?</p>
+        <div class="btn-algn text-center">
+          <button type="button" class="btn btn-success cstm-intro-btn" onclick="hide()">Hide</button>
+          <button type="button" class="btn btn-success cstm-intro-btn" onclick="show()">Show</button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- show-hidden end -->
+
+
+    <!-- jq start -->
+    <section class="jq-alrt">
+      <div class="container">
+        <h1 class="text-center text-dark">Alert with JQ</h1>
+
+        <div class="text-center">
+          <button type="button" class="btn btn-success cstm-intro-btn alrt-jq-btn">alert</button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="jq-s-h">
+      <div class="container">
+        <h1 class="text-center text-dark">Show & Hide with JQ</h1>
+        <h3 id="jqshhd" class="text-center">Every moment is a fresh beginning.</h3>
+        <div class="text-center">
+          <button type="button" class="btn btn-success cstm-intro-btn jq-h">hide</button>
+          <button type="button" class="btn btn-success cstm-intro-btn jq-s">show</button>
+          <button type="button" class="btn btn-success cstm-intro-btn jq-toggle">both</button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="jq-s-h">
+      <div class="container">
+        <h1 class="text-center text-dark">Fade Show & Hide with JQ</h1>
+        <h3 id="jqfshhd" class="text-center">Every moment is a fresh beginning.</h3>
+        <div class="text-center">
+          <button type="button" class="btn btn-success cstm-intro-btn jq-fh">hide</button>
+          <button type="button" class="btn btn-success cstm-intro-btn jq-fs">show</button>
+          <button type="button" class="btn btn-success cstm-intro-btn jq-ftoggle">both</button>
+        </div> 
+      </div> 
+    </section> 
+    <hr>
+    <section class="sld-up">
+      <div class="container">
+        <h1 id="sldUph1" class="text-center text-dark sldUph1">What is Jquery?</h1>
+        <p class="sldUp">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+      </div>
+    </section>
+    <!-- jq end -->
+
+    <!-- class work end -->
+
+    
+
+    
+
+
+
+
+    <!-- js link -->
+    <script type="text/javascript" src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>

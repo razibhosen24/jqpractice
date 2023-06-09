@@ -1,0 +1,106 @@
+
+
+/*font start*/
+@font-face{
+	font-family: PTSans-Regular;
+	src: url(../fonts/ptsans/PTSans-Regular.ttf);
+	
+}
+
+@font-face{
+	font-family: PTSans-Bold;
+	src: url(../fonts/ptsans/PTSans-Bold.ttf);
+	
+}
+/*font end*/
+
+/*common start*/
+body {
+	font-family: PTSans-Regular;
+	font-size: 16px;
+	font-weight: 400;
+	color: #909090; 
+
+}
+/*common end*/
+
+/*header start*/
+header {
+	padding: 25px 0;
+	font-size: 30px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #3cbc8c;
+
+}
+ 
+/*header end*/
+
+/*intro*/
+.intro{
+	margin: 25px 0 0;
+}
+
+.intro-cntnt1{ 
+    margin: 135px 0 0;
+
+}
+.intro-cntnt1 h1, .intro-cntnt3 h1{
+	font-size: 24px;
+	color: #333333;
+}
+
+.cstm-intro-btn{
+	font-family: PTSans-Bold;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.intro-cntnt3{ 
+    margin: 130px 0 0;
+
+}
+/*intro*/
+
+/*output*/
+.ot-pt{
+	margin-top: 25px;
+}
+/*output*/
+
+/*statement start*/
+.stmnt{
+	margin-top: 25px;
+}
+
+.stmnt-emxple-1{
+	font-size: 18px;
+	color: #333333;
+}
+/*statement end*/
+
+/*operators start*/
+.oprtr{
+	margin-top: 25px;
+}
+
+/*operators end*/
+
+/*class work start*/
+.shHdn{
+	font-size: 22px;
+	color: #333333;
+}
+.sldUph1{
+	cursor: pointer;
+}
+
+.sldUp{
+	padding: 0 150px;
+	color: #333333;
+	display: none;
+}
+/*class work end*/
+
